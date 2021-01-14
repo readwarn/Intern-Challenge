@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100vh;
+    overflow-x: hidden;
+}
+div#app{
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100vh;
+}
+div.loading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background:#9d1243;
+    justify-content: center;
+    align-items: center;
+}
+div.loading img{
+    width: 70px;
+    height: 70px;
+}
+div.loaded{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    color: white;
+}
+p.title{
+    font-size: 2.3rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+div.left-section{
+    width: 50%;
+    background:#9d1242;
+}
+div.right-section{
+    width: 50%;
+    background: #c31d59;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+div.social-media{
+   padding: 0rem 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 30%;
+   font-size: 1.8rem;
+   z-index: 10;
+   position: relative;
+}
+
+div.middle-section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+div.links{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+div.side-links{
+    display: flex;
+    width: 40%;
+}
+div.left-links{
+    justify-content: flex-end;
+}
+.mr{
+    margin-right: 3.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    filter: brightness(0.8);
+}
+div.links a{ 
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+div.image-container{
+    width: 40%;
+    height: 70%;
+    margin: 20px 0px;
+    box-shadow: -13px 11px 21px -8px rgba(0,0,0,0.75);
+}
+div.image-container img{
+    width: 100%;
+    height: 100%;
+}
+div.links img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute
+}
+
+@media only screen and (max-width: 600px) {
+    .mr{
+        margin-right: 0rem;
+    }
+    div.side-links{
+        width: auto;
+        flex-direction: column;
+        height: 50px;
+        justify-content: space-between;
+    }
+    div.links a{ 
+        font-size: 0.85rem;
+    }
+    div.image-container{
+        width: 70%;
+    }
+    div.links img{
+        width: 55px;
+        height: 55px;
+    }
+}
